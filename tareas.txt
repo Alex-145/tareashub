@@ -1,0 +1,26 @@
+tareas
+
+
+listar ventas anuladas si no estan 
+crear proformas
+crear dashboard
+crear carrito
+--------------web
+agregar contactenos con ubicacion
+mejorar productos no comprar mas de 4
+mejorar foter
+agregar nosotros mejorar inicio
+agregar funcionalidad de carrito
+
+
+
+
+servicios agregar porcentaje de ganancia
+diezmo agregar gastos 700
+
+
+---opcionales
+
+categoria mejorar interfaz
+marcas mejorar interfaz
+
