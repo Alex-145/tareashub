@@ -1,0 +1,21 @@
+ // Confirma la eliminación de un detalle
+    public function confirmDeleteDetail($detailId)
+    {
+        $this->detailToDelete = $detailId;
+        $this->showDeleteConfirmationde = true;
+    }
+
+
+ // Actualiza el estado de una venta
+    public function updateSaleStatus($saleId, $newStatus, $requiredCurrentStatus)
+    {
+        $sale = Sale::find($saleId);
+
+        if ($sale && $sale->status_fac === $requiredCurrentStatus) {
+            $sale->update(['status_fac' => $newStatus]);
+            session()->flash('message', "El estado de la venta se actualizó a {$newStatus}.");
+        } else {
+            session()->flash('error', 'No se pudo actualizar el estado de la venta.');
+        }
+    }
+

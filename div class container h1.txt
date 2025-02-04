@@ -1,0 +1,41 @@
+
+<div class="container">
+    <h1>Clients</h1>
+    @if (session('success'))
+        <div class="alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    <a href="{{ route('clients.create') }}" class="btn btn-primary mb-3">Add New Client</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>DNI/RUC</th>
+                <th>Business Name</th>
+                <th>Phone Number</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($clients as $client)
+                <tr>
+                    <td>{{ $client->name }}</td>
+                    <td>{{ $client->dni_ruc }}</td>
+                    <td>{{ $client->business_name }}</td>
+                    <td>{{ $client->phone_number }}</td>
+                    <td>
+                        <a href="{{ route('clients.show', $client->id) }}" class="btn btn-info">View</a>
+                        <a href="{{ route('clients.edit', $client->id) }}" class="btn btn-warning">Edit</a>
+                        <form action="{{ route('clients.destroy', $client->id) }}" method="POST" style="display:inline-block;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
+

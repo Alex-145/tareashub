@@ -22,6 +22,8 @@ diezmo agregar gastos 700
 ---opcionales
 
 categoria mejorar interfaz
-marcas mejorar interfaz
-
+marcas mejora
 solo falta la base de datos 
+hola como estasi
+este es el ultimo cambio 
+ga 
