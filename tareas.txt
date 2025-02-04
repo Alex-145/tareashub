@@ -24,3 +24,4 @@ diezmo agregar gastos 700
 categoria mejorar interfaz
 marcas mejorar interfaz
 
+hola como estas 
