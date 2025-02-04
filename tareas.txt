@@ -12,10 +12,10 @@ mejorar foter
 agregar nosotros mejorar inicio
 agregar funcionalidad de carrito
 
+eliminar commit
 
 
-
-servicios agregar porcentaje de ganancia
+servicio agregar porcentaje de ganancia
 diezmo agregar gastos 700
 
 
